@@ -40,7 +40,7 @@
     }
 
     .button-primary {
-      @apply flex justify-center items-center bg-slate-200 rounded-md font-medium px-5 py-2 hover:bg-slate-300 dark:bg-indigo-500 dark:hover:bg-indigo-600;
+      @apply flex justify-center items-center bg-slate-200 rounded-md font-medium px-5 py-2 enabled:hover:bg-slate-300 dark:bg-indigo-500 enabled:dark:hover:bg-indigo-600 disabled:opacity-20;
     }
 
     .placeholders-wrapper {
