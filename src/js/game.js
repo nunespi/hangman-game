@@ -73,7 +73,7 @@ export const startGame = () => {
   winCount = 0;
   logoH1.classList.add('logo-sm');
   const randomIndex = Math.floor(Math.random() * WORDS.length);
-  const wordToGuess = WORDS[randomIndex];
+  const wordToGuess = WORDS[randomIndex].toLowerCase();
   sessionStorage.setItem('word', wordToGuess);
 
   gameDiv.innerHTML = createPlaceholdersHTML();
@@ -128,6 +128,6 @@ const stopGame = (status) => {
 
   document.getElementById(
     'game'
-  ).innerHTML += `<p>The word was: <span class="result-word">${word}</span></p><button id="play-again" class="button-primary px-5 py-2 mt-5">Play again</button>`;
+  ).innerHTML += `<p>The word was: <span class="result-word">${word}</span></p><button id="play-again" class="button-primary px-5 py-2 mt-5">PLAY AGAIN</button>`;
   document.getElementById('play-again').onclick = startGame;
 };
