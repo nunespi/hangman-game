@@ -23,3 +23,6 @@ npm install
 ```
 npm run dev
 ```
+### OR
+
+https://nunespi.github.io/hangman-game/
